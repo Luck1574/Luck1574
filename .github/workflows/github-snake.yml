@@ -1,24 +1,29 @@
 name: Generate Snake
-
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: Platane/snk@master
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate the snake image
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-      - uses: peaceiris/actions-gh-pages@v4
+
+      - name: Upload images to github-snake branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./add snake action
+          publish_dir: ./dist
+          target_branch: github-snake
