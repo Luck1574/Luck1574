@@ -1,16 +1,13 @@
-## Hi there 👋
+# Hi there 👋
+### 关于我
+- 🔭 目前正在学习 Python
+- 🌱 正在研究前端/后端开发
+- 📫 联系方式：xxx@shturl.
 
-<!--
-**Luck1574/Luck1574** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 🛠️ 技术栈
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+### 📌 我的项目
+- [项目A](仓库链接)：项目简介
+- [项目B](仓库链接)：项目简介
